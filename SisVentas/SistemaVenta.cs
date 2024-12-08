@@ -6,7 +6,7 @@ namespace SisVentas
         private List<Usuario> Usuarios = new List<Usuario>();
         private List<Producto> Productos = new List<Producto>();
         private Usuario usuarioAutenticado = null;
-        private List<string> historial = null;
+        private List<string> historial = new List<string>();
 
         public SistemaVenta()
         {
@@ -91,13 +91,13 @@ namespace SisVentas
                 if (producto == null)
                 {
                     Console.WriteLine("Producto no encontrado.");
-                    return;
+                    continue;
                 }
                 carrito.AgregarProductoAlCarrito(producto);
                 Console.WriteLine("Digite 'Y' o 'N' respectivamente para guardar o cancelar la compra");
-                Console.WriteLine("Apriete la tecla Enter para continuar agregando productos");
-                char input = Console.ReadLine().ToUpper()[0];
-                if (input == 'Y')
+                Console.WriteLine("Presione cualquier tecla para continuar...");
+                ConsoleKeyInfo keyInfo = Console.ReadKey();
+                if (keyInfo.Key == ConsoleKey.Y)
                 {
                     Console.WriteLine($"Carrito #{carrito.GetID_Venta()}");
                     carrito.MostrarItemsCarrito();
@@ -105,7 +105,7 @@ namespace SisVentas
                     carrito.VaciarCarrito();
                     break;
                 }
-                else if (input == 'N')
+                else if (keyInfo.Key == ConsoleKey.N)
                 {
                     Console.WriteLine("Eliminando items del carrito...");
                     carrito.VaciarCarrito();
@@ -116,7 +116,7 @@ namespace SisVentas
         }
         private void MostrarHistorial()
         {
-            if (historial == null)
+            if (historial.Count == 0 || historial == null)
             {
                 Console.WriteLine("Aun no has realizado ventas");
                 PauseConsole();
