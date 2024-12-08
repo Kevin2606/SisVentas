@@ -123,6 +123,7 @@ Orquesta el funcionamiento principal del sistema, permitiendo la gestión de usu
 Este usuario se ha creado al inicio del programa para realizar pruebas de autenticación.
 
 **Productos Predefinidos:**
+
 1. **Producto**: 
    - **ID**: `1`
    - **Nombre**: `Laptop Dell`
