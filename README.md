@@ -125,23 +125,23 @@ Este usuario se ha creado al inicio del programa para realizar pruebas de autent
 **Productos Predefinidos:**
 1. **Producto**: 
    - **ID**: `1`
-   - **Nombre**: `Producto A`
-   - **Precio**: `$50.00`
+   - **Nombre**: `Laptop Dell`
+   - **Precio**: `1200.00`
    
 2. **Producto**: 
    - **ID**: `2`
-   - **Nombre**: `Producto B`
-   - **Precio**: `$100.00`
+   - **Nombre**: `MacBook Pro`
+   - **Precio**: `2400.00m`
 
 3. **Producto**: 
    - **ID**: `3`
-   - **Nombre**: `Producto C`
-   - **Precio**: `$75.00`
+   - **Nombre**: `HP Pavilion`
+   - **Precio**: `900.00`
 
 4. **Producto**: 
    - **ID**: `4`
-   - **Nombre**: `Producto D`
-   - **Precio**: `$200.00`
+   - **Nombre**: `Lenovo ThinkPad`
+   - **Precio**: `1100.00`
 
 Estos productos ya están cargados en el catálogo del sistema para realizar pruebas de gestión de productos y carritos.
 
