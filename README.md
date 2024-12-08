@@ -114,15 +114,49 @@ Orquesta el funcionamiento principal del sistema, permitiendo la gestión de usu
 
 ## Ejecución
 
+### Elementos Predefinidos para Pruebas
+
+**Usuario Predefinido:**
+- **Email**: `admin@example.com`
+- **Contraseña**: `12345`
+
+Este usuario se ha creado al inicio del programa para realizar pruebas de autenticación.
+
+**Productos Predefinidos:**
+1. **Producto**: 
+   - **ID**: `1`
+   - **Nombre**: `Producto A`
+   - **Precio**: `$50.00`
+   
+2. **Producto**: 
+   - **ID**: `2`
+   - **Nombre**: `Producto B`
+   - **Precio**: `$100.00`
+
+3. **Producto**: 
+   - **ID**: `3`
+   - **Nombre**: `Producto C`
+   - **Precio**: `$75.00`
+
+4. **Producto**: 
+   - **ID**: `4`
+   - **Nombre**: `Producto D`
+   - **Precio**: `$200.00`
+
+Estos productos ya están cargados en el catálogo del sistema para realizar pruebas de gestión de productos y carritos.
+
 ### Flujo de Uso
 1. **Inicio de Sesión**:
-   - Los usuarios deben autenticar sus credenciales antes de acceder al sistema.
+   - Los usuarios deben autenticar sus credenciales antes de acceder al sistema. Puedes probar con el usuario predefinido (`admin@example.com`, `12345`).
+   
 2. **Gestión de Productos**:
-   - Los usuarios pueden agregar, eliminar y visualizar productos en el catálogo.
+   - Los usuarios pueden agregar, eliminar y visualizar productos en el catálogo. Los productos predefinidos ya están cargados para pruebas.
+
 3. **Gestión del Carrito**:
-   - Permite agregar productos al carrito, procesar ventas y vaciar el carrito.
+   - Permite agregar productos al carrito, procesar ventas y vaciar el carrito. Durante las pruebas, puedes agregar productos predefinidos al carrito y realizar compras.
+
 4. **Historial de Ventas**:
-   - Registra y muestra las ventas completadas, incluyendo el ID del carrito y el total de la venta.
+   - Registra y muestra las ventas completadas, incluyendo el ID del carrito y el total de la venta. Puedes verificar el historial después de completar una compra.
 
 ### Requisitos
 - **Framework**: .NET 6 o superior.
